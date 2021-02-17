@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Export drawio files to svg files
-        uses: docker://rlespinasse/drawio-export:<VERSION>
+        uses: docker://rlespinasse/drawio-exportlatest
         with:
           args: --fileext svg --folder drawio-assets --transparent
 
